@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "genshin-start",
+	"version": "${version}",
+	"name": "Genshin Start",
+	"description": "启动游戏时自动下载原神",
+	"authors": [
+		"renzaifei"
+	],
+	"contact": {
+		"sources": "https://github.com/ren-zaifei/genshin-start"
+	},
+	"license": "LGPL-3.0",
+	"icon": "assets/genshin-start/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": ["com.renzaifei.genshin.GenshinStart"]
+	},
+	"mixins": [
+		"genshin-start.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
